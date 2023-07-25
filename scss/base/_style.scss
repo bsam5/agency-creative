@@ -1,0 +1,592 @@
+/*   hero   */
+#hero {
+  text-align: center;
+  margin-top: 68px;
+
+  .title-hero {
+    color: var(--black-color);
+    text-align: center;
+    font-family: $nunito_font;
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: 0.64px;
+  }
+
+  .text {
+    color: var(--grey-color, #464646);
+    text-align: center;
+    font-family: $nunito_font;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    opacity: 0.6;
+    margin-block: 24px 32px;
+  }
+
+
+  .hero-team {
+    max-width: 739px;
+    margin: 99px auto;
+    position: relative;
+
+    .img-team {
+      width: 100%;
+      height: auto;
+      border-radius: 50px;
+    }
+
+    .blue-square {
+      position: absolute;
+      top: -19px;
+      left: 138px;
+      z-index: -1;
+    }
+
+    .read-square {
+      position: absolute;
+      bottom: -19px;
+      left: 147px;
+      z-index: -1;
+    }
+  }
+
+
+  .card-rotate {
+    @extend %card ;
+    width: 175px;
+    height: 95px;
+    padding: 16px 21px;
+    text-align: center;
+    position: absolute;
+    left: -107px;
+    top: 24px;
+
+    .great-project {
+      color: var(--grey-color);
+      font-family: $Quicksand_font;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12px;
+      text-transform: uppercase;
+    }
+
+    .doning {
+      margin-top: 7px;
+      color: var(--grey-color);
+      font-family: $nunito_font;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.24px;
+    }
+  }
+
+  .card-person {
+    @extend %card ;
+    width: 166px;
+    height: 166px;
+    overflow: hidden;
+    position: absolute;
+    right: -107px;
+    bottom: -7px;
+    padding: 26px 20px;
+
+    .person-hero {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .description-person {
+      margin-left: 10px;
+      text-align: start;
+
+      .name {
+        color: var(--grey-color);
+        font-family: $Quicksand_font;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.1px;
+      }
+
+      .work {
+        color: var(--grey-color);
+        font-family: $Quicksand_font;
+        font-size: 6px;
+        font-weight: 600;
+        letter-spacing: 0.06px;
+        opacity: 0.5;
+      }
+    }
+
+    .description {
+      color: var(--grey-color);
+      font-family: $nunito_font;
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 0.1px;
+      margin: 0;
+      margin-top: 12px;
+    }
+  }
+
+  @media (max-width: 991px) {
+
+    .title-hero {
+      font-size: 56px;
+    }
+
+    .text {
+      font-size: 18px;
+    }
+
+    .hero-team {
+      width: 77%;
+
+      .card-person {
+        right: -90px;
+      }
+
+      .card-rotate {
+        left: -87px;
+      }
+    }
+
+  }
+
+  @media (max-width: 767px) {
+    .title-hero {
+      font-size: 28px;
+    }
+
+    .text {
+      margin-block: 20px;
+      font-size: 14px;
+    }
+
+    .hero-team {
+      margin: 62px auto;
+      width: 100%;
+
+      .img-team {
+        border-radius: 12px;
+      }
+
+      .blue-square {
+        bottom: -12px;
+        left: -8px;
+        top: auto;
+      }
+
+      .read-square {
+        top: -11px;
+        right: -9px;
+        left: auto;
+        bottom: auto;
+      }
+
+      .card-person {
+        width: 80px;
+        height: 80px;
+        right: 0px;
+        bottom: -17px;
+        padding: 12px 10px;
+        text-align: start;
+        border-radius: 6px;
+
+        .person-hero {
+          width: 15px;
+          height: 15px;
+        }
+
+        .name {
+          font-size: 5px;
+        }
+
+        .work {
+          font-size: 3px;
+        }
+
+        .description {
+          font-size: 5px;
+          margin-top: 5px;
+        }
+      }
+
+      .card-rotate {
+        padding: 8px 19px 9px 13px;
+        width: 99px;
+        border-radius: 6px;
+        top: -13px;
+        left: 1px;
+
+        svg {
+          width: 13px;
+          height: auto;
+        }
+
+        height: 53px;
+
+        .great-project {
+          font-size: 6px;
+          letter-spacing: 0.06px;
+        }
+
+        .doning {
+          margin-top: 4px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+
+/*  End hero   */
+
+
+#our-teammate {
+  margin-block: 278px 130px;
+  overflow: hidden;
+
+
+  .images {
+    position: relative;
+    height: fit-content;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 24px;
+      position: relative;
+    }
+
+    .read-square, .pink-squar {
+      position: absolute;
+      z-index: -1;
+    }
+
+    .read-square {
+      left: -10px;
+      top: -18px;
+    }
+
+    .pink-squar {
+      right: -10px;
+      bottom: -9px;
+    }
+
+  }
+
+  .content {
+    .primary-text {
+      margin-bottom: 24px;
+    }
+
+    .white-box {
+      margin-left: 25px;
+
+      &:is(:hover,:active) {
+        svg {
+          fill: var(--wight-color);
+        }
+      }
+    }
+
+  }
+
+  @media (min-width: 991px) and (max-width: 1000px) {
+    .content {
+      .white-box {
+        margin-left: 19px;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    margin-block: 170px 110px;
+    .boxs {
+      margin-block: 25px 66px;
+    }
+  }
+  @media (max-width: 767px) {
+    margin-block: 114px 99px;
+    .content {
+      .primary-text {
+        margin-bottom: 10px;
+
+      }
+    }
+  }
+}
+
+/*  End our-teammate   */
+#our-services {
+  .title {
+    margin: 0 0 18px;
+  }
+
+  .primary-text {
+    margin-bottom: 32px;
+  }
+
+  .link {
+    color: var(--primary);
+    display: block;
+    text-align: end;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    svg {
+      margin-left: 10px;
+    }
+  }
+
+  .services-card {
+    margin: auto;
+    width: 262px;
+    height: 272px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+
+    &.active {
+      background: #FFF;
+      box-shadow: 4px 4px 30px 0 var(--primary);
+    }
+
+    .img-card {
+      display: grid;
+      place-content: center;
+      margin: auto;
+      margin-bottom: 32px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: var(--primary);
+
+      &.img-card-2 {
+        background: #FF2D2D;
+      }
+
+      &.img-card-3 {
+        background: #7CE761;
+      }
+
+      &.img-card-4 {
+        background: #FFA800;
+      }
+    }
+
+    .title-part {
+      color: var(--black-color);
+      font-family: $Quicksand_font;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 34px;
+      letter-spacing: 0.24px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .link {
+      margin-bottom: 27px;
+    }
+  }
+  @media (max-width: 767px) {
+    .title {
+      margin-block: 10px 35px;
+    }
+    .primary-text {
+      margin-bottom: 6px;
+    }
+  }
+}
+
+/*  End our-services   */
+#our-portfolio {
+  margin-top: 130px;
+
+  .images-part {
+    margin-block: 48px 52px;
+  }
+
+  .image-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: .3s;
+
+    &:hover {
+      transform: scaleY(1.2);
+    }
+
+    &:after {
+      content: attr(data-img);
+      position: absolute;
+      bottom: 50px;
+      left: 34px;
+      color: #fff;
+    }
+
+    .portfolio-img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 76px;
+    .images-part > div {
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+
+  }
+}
+
+/*  End our-portfolio  */
+
+#testimonial {
+  margin-top: 196px;
+
+  .card-person {
+    @extend %card ;
+    padding: 55px 31px 106px 40px;
+    text-align: start;
+
+    .img-card {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .description-person {
+      margin-left: 30px;
+
+
+      .name {
+        font-family: $Quicksand_font;
+        font-weight: 600;
+        color: var(--primary-color);
+        font-size: 20px;
+        font-style: normal;
+        line-height: 34px;
+        letter-spacing: 0.2px;
+      }
+
+      .work {
+        color: var(--grey-color);
+        font-family: $Quicksand_font;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 34px;
+        letter-spacing: 0.11px;
+        opacity: 0.5;
+      }
+    }
+
+    .description {
+      color: var(--grey-color);
+      font-family: $Quicksand_font;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px; /* 155.556% */
+      letter-spacing: 0.18px;
+      opacity: 0.8;
+      margin-top: 25px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width: 991px) {
+    margin-top: 104px;
+    .testimonial-card > div {
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+
+  }
+}
+
+/*  End testimonial   */
+#collaboration {
+  margin-block: 284px 178px;
+
+  .title {
+    color: var(--black-color);
+    font-family: $nunito_font;
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 0.165px;
+    margin: 0;
+  }
+
+  .advance {
+    color: var(--grey-color);
+    font-family: $Quicksand_font;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.2px;
+    margin-block: 25px 37px;
+  }
+
+  .img-collaboration {
+    max-width: 50%;
+    height: 288px;
+    width: auto;
+
+    &:last-child {
+      max-width: 55%;
+      transform: translate(32px, 91px);
+      margin-bottom: 91px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .content {
+      margin-top: 45px;
+    }
+  }
+  @media (max-width: 767px) {
+    margin-block: 100px;
+    .img-collaboration {
+      max-width: 50%;
+      height: 177px;
+      width: auto;
+
+      &:last-child {
+        height: 196px;
+      }
+    }
+    .title {
+      font-size: 28px;
+      line-height: 130%; /* 36.4px */
+      letter-spacing: 0.084px;
+    }
+
+    .advance {
+      font-size: 14px;
+      letter-spacing: 0.14px;
+      margin-block: 25px;
+    }
+  }
+  @media (max-width: 440px) {
+    .images {
+      justify-content: end !important;
+    }
+  }
+}
+
+/*  End collaboration   */

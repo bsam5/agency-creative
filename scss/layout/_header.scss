@@ -1,0 +1,93 @@
+.layer {
+  height: 100vh;
+  display: none;
+}
+
+.navbar {
+  background: var(--wight-color);
+  padding: 15px 0;
+  margin-top: 57px;
+  z-index: 10000;
+  .navbar-collapse {
+    transition: height 0.3s ease; /* You can adjust the animation speed (0.3s) and easing here */
+    overflow: hidden; /* Ensure content is hidden smoothly during the collapse */
+    height: auto; /* Set the default height to auto for proper content rendering */
+  }
+  .navbar-brand {
+    padding: 0;
+
+    .logo {
+      height: 50px;
+      width: auto;
+    }
+  }
+
+  .nav-link {
+    font-family: $Quicksand_font;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+    text-transform: capitalize;
+    margin-right: 42px;
+
+    &:is(.active,.show) {
+      font-weight: bold;
+    }
+  }
+}
+
+.navbar-toggler {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 29px;
+  height: 25px;
+  align-items: center;
+  border: none;
+
+  .navbar-icon {
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: var(--black-color);
+    border-radius: 6px;
+
+    &:nth-child(2) {
+      width: 12px;
+    }
+  }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    .nav-link {
+      margin-right: 20px;
+    }
+
+    .white-box {
+      padding: 12px 20px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    margin-top: 35px;
+    text-align: center;
+
+    .nav-link {
+      margin: 0;
+    }
+
+    .white-box {
+      border: none;
+      border-bottom: 1px solid;
+      padding: 0;
+      border-radius: 0;
+    }
+  }
+}

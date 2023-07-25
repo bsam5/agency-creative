@@ -1,0 +1,42 @@
+%global-btn {
+  border-radius: 24px;
+  padding: 12px 50px;
+  font-family: $Quicksand_font;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  transition: .5s;
+  border: 1px solid var(--primary);
+}
+
+.primary-box {
+  @extend %global-btn ;
+  background: var(--primary);
+  color: var(--wight-color);
+  box-shadow: 0px 4px 8px 0px var(--primary);
+
+  &:is(:hover,:active) {
+    background: var(--wight-color);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+}
+
+.white-box {
+  @extend %global-btn ;
+  color: var(--primary);
+
+  &:is(:hover, :active) {
+    background: var(--primary);
+    color: var(--wight-color);
+  }
+}
+
+@media (max-width: 767px) {
+  %global-btn {
+    padding: 10px 35px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.12px;
+  }
+}
