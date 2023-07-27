@@ -1,0 +1,9 @@
+@mixin font-face($family , $weight,$URL) {
+
+  @font-face {
+    font-family: $family;
+    font-weight: $weight;
+    src: url($URL);
+    font-display: swap;
+  }
+}
