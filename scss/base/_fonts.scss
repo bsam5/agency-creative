@@ -1,46 +1,12 @@
-$nunito_font: 'Nunito';
-$Quicksand_font: 'Quicksand';
-//
-//@font-face {
-//  font-family: 'Nunito';
-//  font-weight: 400;
-//  src: url();
-//  font-display: swap;
-//}
-@include font-face($nunito_font,400,'../fonts/Nunito-Regular.ttf') ;
-@include font-face($nunito_font,700,'../fonts/Nunito-Regular.ttf') ;
-@include font-face($nunito_font,800,'../fonts/Nunito-Regular.ttf') ;
-// Quicksand_font
-@include font-face($Quicksand_font,400,'../fonts/Nunito-Regular.ttf') ;
-@include font-face($Quicksand_font,600,'../fonts/Nunito-Regular.ttf') ;
-@include font-face($Quicksand_font,700,'../fonts/Nunito-Regular.ttf') ;
+$nunito_font: 'nunito';
+$quicksand_font: 'quicksand';
 
-//@font-face {
-//  font-family: 'Nunito';
-//  font-weight: 700;
-//  src: url('../fonts/Nunito-Bold.ttf');
-//}
-//
-//@font-face {
-//  font-family: 'Nunito';
-//  font-weight: 800;
-//  src: url('../fonts/Nunito-ExtraBold.ttf');
-//}
-//
-//@font-face {
-//  font-family: 'Quicksand';
-//  font-weight: 400;
-//  src: url('../fonts/Quicksand-Regular.ttf');
-//}
-//
-//@font-face {
-//  font-family: 'Quicksand';
-//  font-weight: 600;
-//  src: url('../fonts/Quicksand-SemiBold.ttf');
-//}
-//
-//@font-face {
-//  font-family: 'Quicksand';
-//  font-weight: 700;
-//  src: url('../fonts/Quicksand-Bold.ttf');
-//}
+
+
+@include font-face($nunito_font,'../fonts/nunito-regular.ttf',400) ;
+@include font-face($nunito_font,'../fonts/nunito-bold.ttf',700) ;
+@include font-face($nunito_font,'../fonts/nunito-extraBold.ttf',800) ;
+//// Quicksand_font
+@include font-face($quicksand_font,'../fonts/quicksand-regular.ttf',400) ;
+@include font-face($quicksand_font,'../fonts/quicksand-semiBold.ttf',600) ;
+@include font-face($quicksand_font,'../fonts/quicksand-bold.ttf',700) ;

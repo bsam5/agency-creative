@@ -1,9 +1,9 @@
-@mixin font-face($family , $weight,$URL) {
-
+@mixin font-face($font-name, $font-path, $font-weights) {
   @font-face {
-    font-family: $family;
-    font-weight: $weight;
-    src: url($URL);
+    font-family: '#{$font-name}';
+    src:  unquote("url('#{$font-path}') format('truetype')");
+    font-weight: $font-weights;
+    font-style: normal;
     font-display: swap;
   }
 }
